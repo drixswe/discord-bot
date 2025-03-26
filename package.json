@@ -4,6 +4,9 @@
   "type": "module",
   "private": true,
   "scripts": {
+    "start": "bun run .",
+    "dev": "bun run . --watch",
+    "format": "biome format --write .",
     "prepare": "husky"
   },
   "dependencies": {
@@ -21,8 +24,6 @@
     "lint-staged": "^15.5.0"
   },
   "lint-staged": {
-    "*.{js,ts,json,md}": [
-      "biome format --write ."
-    ]
+    "*.{js,ts,json,md}": ["biome format --write ."]
   }
 }
