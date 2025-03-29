@@ -55,10 +55,7 @@ const initializeCommands = async (commands: any[], rest: REST) => {
 
 export const deployCommands = async (bot: Bot) => {
   const slashCommands = readCommandFiles(bot)
-
-  const rest = new REST({ version: '10' }).setToken(
-    process.env.TOKEN as string
-  )
+  const rest = new REST({ version: '10' }).setToken(process.env.TOKEN as string)
 
   if (!slashCommands) return
   initializeCommands([...slashCommands], rest)

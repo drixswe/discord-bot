@@ -30,6 +30,7 @@
     "paths": {
       "@components/*": ["src/components/*"],
       "@common/*": ["src/common/*"],
+      "@database/*": ["src/database/*"],
       "@events/*": ["src/events/*"],
       "@helpers/*": ["src/helpers/*"]
     }
